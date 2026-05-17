@@ -88,5 +88,5 @@ def main():
     logger.info("Bot ishga tushdi...")
     app.run_polling(allowed_updates=Update.ALL_TYPES, drop_pending_updates=True)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
