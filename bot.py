@@ -8,7 +8,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(name)
+logger = logging.getLogger(_name_)
 
 KITOBLAR = """
 1. O'tkan kunlar — Abdulla Qodiriy — 35,000 so'm
@@ -87,5 +87,5 @@ def main():
     logger.info("Bot ishga tushdi...")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
 
-if name == "main":
+if _name_ == "_main_":
     main()
